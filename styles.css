@@ -1,0 +1,30 @@
+
+.icon {
+  display: none;
+}
+
+.nav {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+  .links {
+    display: none;
+  }
+
+  .icon {
+    display: block; 
+  }
+  .links.show {
+    display: flex;
+    flex-direction: column;
+    background: #300155;
+    border-radius: 12px;
+  }
+
+  .links.show li {
+
+    border-bottom: 2px solid yellow;
+    font-size: 1.4rem;
+  }
+}

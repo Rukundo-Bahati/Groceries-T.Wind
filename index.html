@@ -4,31 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
-    <title>Groceries</title>
+    <title>CAFE</title>
     <link rel="stylesheet" href="./styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body class="bg-[url('images/image.png')] bg-center bg-cover">
+    <!-- header section -->
     <div class="w-screen px-10 py-5">
-      <nav class="flex items-center">
+      <nav class="flex items-center" style="justify-content: space-between;">
         <img src="/images/logo.png" alt="" class="w-40 cursor-pointer" />
-        <ul class="flex-1 text-center">
-          <li class="list-none inline-block px-5">
+        
+        <img src="./images/pointers.png" class="mx-3 border border-transparent hover:border-yellow-300 hover:p-1 hover:bg-blue-950 hover:rounded-sm duration-300  icon">
+
+        <ul class="flex-1 text-center links">
+          <li class="list-none inline-block px-5 ">
             <a href="#home" class="no-underline text-white px-2 hover:text-yellow-300 duration-400">Home</a>
           </li>
-          <li class="list-none inline-block px-5">
+          <li class="list-none inline-block px-5 ">
+            <a href="#hero" class="no-underline text-white px-2 hover:text-yellow-300 duration-400">Services</a>
+          </li>
+          <li class="list-none inline-block px-5 ">
             <a href="#about" class="no-underline text-white px-2 hover:text-yellow-300 duration-400">About</a>
           </li>
-          <li class="list-none inline-block px-5">
-            <a href="#features" class="no-underline text-white px-2 hover:text-yellow-300 duration-400"
-              >Features</a
+          <li class="list-none inline-block px-5 nav__item">
+            <a href="#menu" class="no-underline text-white px-2 hover:text-yellow-300 duration-400"
+              >Menu</a
             >
           </li>
           <li class="list-none inline-block px-5">
             <a href="#contact" class="no-underline text-white px-2 hover:text-yellow-300 duration-400">Contact</a>
           </li>
         </ul>
-        <img src="/images/cart.png" alt="" class="w-8 cursor-pointer" />
       </nav>
     </div>
     <!-- </div> -->
@@ -39,11 +46,11 @@
       <div class="text-white grid sm:grid-cols-1 md:grid-cols-2 gap-4">
         <div class="flex justify-center items-center flex-col">
           <h1 class="text-6xl font-semibold leading-normal">
-            Groceries <br />
-            Delivery in <span class="font-light">15 mins</span>
+            BEST CAFE <br />
+            FOR BEST <span class="font-light">PRICE</span>
           </h1>
           <p class="mt-4">
-            Grocify offers a wide range of products, including fresh produce,
+            TOP CAFE offers a wide range of products, including fresh produce,
             meats, dairy, baked goods, and non-perishable products.
           </p>
 
@@ -55,7 +62,7 @@
               Order Now
             </a>
             <a
-              href="#"
+              href="./login/login.html"
               class="hover:border border-yellow-300 duration-500 py-3 px-8 rounded-3xl"
             >
               Download App
@@ -65,12 +72,74 @@
         </div>
 
         <div class="flex justify-center items-center">
-          <img src="./images/grocery-image.png" alt="Grocery" class="w-full" />
+          <img src="./images/grocery-image (2).jpg" alt="Grocery" class="w-full rounded-3xl shadow-lg />
         </div>
       </div>
     </div>
 
-    <!-- about -->
+       <!-- Hero section-->
+       <div
+       class="container px-10 py-20 bg-blue-900 bg-opacity-75 text-white w-screen"
+       id="hero"
+     >
+       <div class="text-center mb-10">
+         <h2 class="text-4xl font-semibold">OUR SERVICES</h2>
+       </div>
+       <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+         <div class="flex flex-col justify-center">
+           <p class="mb-4">
+             At TOP CAFE, we are committed to providing you with the freshest
+             Products delivered right to your doorstep in just 15 minutes. We
+             understand the importance of convenience and quality in your daily
+             life.
+           </p>
+           <p class="mb-4">
+             Our wide range of products includes fresh produce, high-quality
+             meats, dairy, baked goods, and non-perishable items. We partner with
+             local customers and suppliers to ensure that you receive the best
+             quality products available.
+           </p>
+           <p>
+             With our user-friendly app and efficient delivery service,  cafe products
+             shopping has never been easier. Trust TOP CAFE for all your cafe products
+             needs and experience the best in cafe products delivery service.
+           </p>
+           <a
+           href="./login/login.html"
+           class="bg-yellow-300 text-blue-950 rounded-3xl py-3 px-8 md:w-2/5 text-center text-lg mt-3
+           font-medium inline-block mr-4 hover:bg-transparent hover:border-yellow-300 hover:text-white duration-300 border border-transparent"
+         >
+           Exprole More
+         </a>
+         </div>
+         <div class="flex justify-center items-center">
+          <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+            <img
+              src="./images/grocery-image.png"
+              alt="About Us"
+              class="w-full md:w-3/4 rounded-lg shadow-3xl"
+            />
+            <img
+              src="./images/about.jpg"
+              alt="About Us"
+              class="w-full md:w-3/4 rounded-lg shadow-lg"
+            />
+            <img
+              src="./images/about.jpg"
+              alt="About Us"
+              class="w-full md:w-3/4 rounded-lg shadow-lg"
+            />
+            <img
+              src="./images/contact.jpg"
+              alt="About Us"
+              class="w-full md:w-3/4 rounded-lg shadow-lg"
+            />
+          </div>
+         </div>
+       </div>
+     </div>
+
+    <!-- about section-->
     <div
       class="container px-10 py-20 bg-blue-950 bg-opacity-75 text-white w-screen"
       id="about"
@@ -81,21 +150,21 @@
       <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
         <div class="flex flex-col justify-center">
           <p class="mb-4">
-            At Grocify, we are committed to providing you with the freshest
-            groceries delivered right to your doorstep in just 15 minutes. We
+            At TOP CAFE, we are committed to providing you with the freshest
+            Products delivered right to your doorstep in just 15 minutes. We
             understand the importance of convenience and quality in your daily
             life.
           </p>
           <p class="mb-4">
             Our wide range of products includes fresh produce, high-quality
             meats, dairy, baked goods, and non-perishable items. We partner with
-            local farmers and suppliers to ensure that you receive the best
+            local customers and suppliers to ensure that you receive the best
             quality products available.
           </p>
           <p>
-            With our user-friendly app and efficient delivery service, grocery
-            shopping has never been easier. Trust Grocify for all your grocery
-            needs and experience the best in grocery delivery service.
+            With our user-friendly app and efficient delivery service,  cafe products
+            shopping has never been easier. Trust TOP CAFE for all your cafe products
+            needs and experience the best in cafe products delivery service.
           </p>
         </div>
         <div class="flex justify-center items-center">
@@ -108,25 +177,25 @@
       </div>
     </div>
 
-    <!-- features -->
+    <!-- MENU section -->
 
-    <div class="container px-10 py-20 text-white" id="features">
+    <div class="container px-10 py-20 text-white" id="menu">
       <div class="text-center mb-10">
-        <h2 class="text-4xl font-semibold">Features</h2>
+        <h2 class="text-4xl font-semibold">MENU</h2>
       </div>
       <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg">
+        <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg hover:shadow-3xl">
           <img src="./images/groc1.jpg" alt="Feature 1" class="mb-4 mx-auto" />
-          <h3 class="text-2xl font-semibold mb-2 text-center">Fast Delivery</h3>
+          <h3 class="text-2xl font-semibold mb-2 text-center">BREAKFAST</h3>
           <p class="text-center">
-            Get your groceries delivered to your doorstep in just 15 minutes,
+            Get your products delivered to your doorstep in just 15 minutes,
             ensuring you never run out of essentials.
           </p>
         </div>
         <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg">
           <img src="./images/groc2.jpg" alt="Feature 2" class="mb-4 mx-auto" />
           <h3 class="text-2xl font-semibold mb-2 text-center">
-            Wide Range of Products
+           DINNER
           </h3>
           <p class="text-center">
             Choose from a variety of fresh produce, meats, dairy, baked goods,
@@ -136,7 +205,17 @@
         <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg">
           <img src="./images/groc3.jpg" alt="Feature 3" class="mb-4 mx-auto" />
           <h3 class="text-2xl font-semibold mb-2 text-center">
-            Quality Assurance
+             LUNCH
+          </h3>
+          <p class="text-center">
+            We partner with local customers and suppliers to ensure the highest
+            quality of products.
+          </p>
+        </div>
+        <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg">
+          <img src="./images/groc4.jpg" alt="Feature 3" class="mb-4 mx-auto" />
+          <h3 class="text-2xl font-semibold mb-2 text-center">
+        Wide range of products
           </h3>
           <p class="text-center">
             We partner with local farmers and suppliers to ensure the highest
@@ -144,9 +223,9 @@
           </p>
         </div>
         <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg">
-          <img src="./images/gorc4.jpg" alt="Feature 3" class="mb-4 mx-auto" />
+          <img src="./images//groc6.jpg" alt="Feature 3" class="mb-4 mx-auto" />
           <h3 class="text-2xl font-semibold mb-2 text-center">
-            Quality Assurance
+            COFFEE
           </h3>
           <p class="text-center">
             We partner with local farmers and suppliers to ensure the highest
@@ -156,17 +235,7 @@
         <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg">
           <img src="./images/groc5.jpg" alt="Feature 3" class="mb-4 mx-auto" />
           <h3 class="text-2xl font-semibold mb-2 text-center">
-            Quality Assurance
-          </h3>
-          <p class="text-center">
-            We partner with local farmers and suppliers to ensure the highest
-            quality of products.
-          </p>
-        </div>
-        <div class="bg-blue-950 bg-opacity-75 p-6 rounded-lg shadow-lg">
-          <img src="./images/groc6.jpg" alt="Feature 3" class="mb-4 mx-auto" />
-          <h3 class="text-2xl font-semibold mb-2 text-center">
-            Quality Assurance
+           TEA
           </h3>
           <p class="text-center">
             We partner with local farmers and suppliers to ensure the highest
@@ -247,8 +316,8 @@
             <a href="#about" class="no-underline text-white px-2">About</a>
           </li>
           <li class="list-none inline-block px-5">
-            <a href="#features" class="no-underline text-white px-2"
-              >Features</a
+            <a href="#menu" class="no-underline text-white px-2"
+              >MENU</a
             >
           </li>
           <li class="list-none inline-block px-5">
@@ -264,5 +333,13 @@
         </a>
       </nav>
     </div>
+
+<script>
+  let links = document.querySelector('.links')
+  const icon = document.querySelector('.icon')
+  icon.addEventListener("click", () => {
+    links.classList.toggle("show")
+  })
+</script>
   </body>
 </html>
